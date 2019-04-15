@@ -1,0 +1,25 @@
+{
+    "name": "vscode-herbrand",
+    "displayName": "vscode-herbrand",
+    "description": "Herbrand syntax highlighter",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "herbrand",
+            "aliases": ["Herbrand", "herbrand"],
+            "extensions": [".hb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "herbrand",
+            "scopeName": "source.herbrand",
+            "path": "./syntaxes/herbrand.tmLanguage.json"
+        }]
+    }
+}
